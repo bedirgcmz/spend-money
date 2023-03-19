@@ -77,3 +77,26 @@ body {
 .modal-content {
   margin-top: 80px;
 }
+
+@media only screen and (max-width: 768px) {
+  .clear-basket {
+    font-size: 0.7rem;
+    width: 4rem;
+    height: 4.75rem;
+  }
+  .my-basket {
+    font-size: 0.7rem;
+    width: 4rem;
+    height: 4.75rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .my-basket .shopping {
+    display: inline-block;
+    width: 100%;
+  }
+  .clear-basket .trash {
+    display: inline-block;
+    width: 100%;
+  }
+}

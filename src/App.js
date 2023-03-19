@@ -74,7 +74,10 @@ function App() {
       )}
 
       <button type="button" className="btn  clear-basket" onClick={resetBasket}>
-        <i className="fa-regular fa-trash-can"></i> Clear Basket
+        <span className="trash">
+          <i className="fa-regular fa-trash-can"></i>
+        </span>{" "}
+        Clear Basket
       </button>
       <button
         type="button"
@@ -82,7 +85,10 @@ function App() {
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
-        Go Basket <i className="fa-solid fa-cart-shopping"></i>
+        Go Basket{" "}
+        <span className="shopping">
+          <i className="fa-solid fa-cart-shopping"></i>
+        </span>
         <span className="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-primary">
           {basket && basket.length}
           <span className="visually-hidden">unread messages</span>
