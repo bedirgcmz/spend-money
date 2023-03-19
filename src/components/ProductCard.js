@@ -51,8 +51,8 @@ const ProductCard = ({
 
   return (
     <>
-      <div className="card mb-3 ">
-        <div className="row g-0">
+      <div className="card mb-3 card-main-div">
+        <div className="row g-0 card-second-div">
           <div className="col-md-4 d-flex align-items-center flex-column justify-content-center">
             <img
               src={product.images[imageNumber]}
@@ -77,12 +77,12 @@ const ProductCard = ({
                     data-bs-toggle="modal"
                     data-bs-target="#static"
                   >
-                    <i className="fa-regular fa-eye fs-4 "></i>
+                    <i className="fa-regular fa-eye fs-5 "></i>
                     <span className="">Review</span>
                   </div>
                 )}
               </div>
-              <div className="actions d-flex align-items-center justify-content-around">
+              <div className="actions d-flex align-items-center justify-content-around card-button-group">
                 <button
                   disabled={!basketItem}
                   onClick={removeFromBaskets}

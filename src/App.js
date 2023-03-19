@@ -37,7 +37,7 @@ function App() {
             <Grid item xs={8} className="m-auto">
               <Grid container spacing={2}>
                 {products.map((product) => (
-                  <Grid item xs={6}>
+                  <Grid item xs={12} md={6}>
                     <ProductCard
                       key={product.id}
                       product={product}
