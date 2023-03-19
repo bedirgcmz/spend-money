@@ -79,6 +79,9 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  .header h6 {
+    font-size: 20px !important;
+  }
   .clear-basket {
     font-size: 0.7rem;
     width: 4rem;
